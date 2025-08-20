@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="my">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>မြန်မာဝက်ဘ်ဆိုက် - GitHub Pages</title>
+    <style>
+        /* Myanmar font support */
+        @font-face {
+            font-family: 'MyanmarFont';
+            src: local('Myanmar3'), local('Padauk'), 
+                 url('https://fonts.googleapis.com/css2?family=Padauk&display=swap');
+            unicode-range: U+1000-109F;
+        }
+        
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        
+        body {
+            font-family: 'MyanmarFont', 'Myanmar3', 'Padauk', sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            min-height: 100vh;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+        
+        header {
+            background: linear-gradient(90deg, #ff7e5f 0%, #feb47b 100%);
+            color: white;
+            padding: 2rem 0;
+            text-align: center;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+        }
+        
+        nav {
+            background-color: #fff;
+            padding: 1rem;
+            border-radius: 8px;
+            margin-bottom: 2rem;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        nav ul {
+            display: flex;
+            justify-content: center;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+        
+        nav li {
+            margin: 0 15px;
+        }
+        
+        nav a {
+            text-decoration: none;
+            color: #ff7e5f;
+            font-weight: bold;
+            font-size: 1.1rem;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #333;
+            text-decoration: underline;
+        }
+        
+        .content {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+            margin-bottom: 2rem;
+        }
+        
+        .card {
+            background: white;
+            padding: 1.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+        
+        .card:hover {
+            transform: translateY(-5px);
+        }
+        
+        .card h2 {
+            color: #ff7e5f;
+            margin-bottom: 1rem;
+            border-bottom: 2px solid #feb47b;
+            padding-bottom: 0.5rem;
+        }
+        
+        .card p {
+            margin-bottom: 1rem;
+        }
+        
+        footer {
+            text-align: center;
+            padding: 2rem 0;
+            margin-top: 2rem;
+            background: #333;
+            color: white;
+            border-radius: 10px;
+        }
+        
+        .btn {
+            display: inline-block;
+            background: #ff7e5f;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background 0.3s;
+        }
+        
+        .btn:hover {
+            background: #feb47b;
+        }
+        
+        @media (max-width: 768px) {
+            nav ul {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            nav li {
+                margin: 5px 0;
+            }
+            
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>မြန်မာဝက်ဘ်ဆိုက်မှ ကြိုဆိုပါတယ်</h1>
+            <p>GitHub Pages ကိုအသုံးပြုပြီး တည်ဆောက်ထားသော ဝက်ဘ်ဆိုက်</p>
+        </header>
+        
+        <nav>
+            <ul>
+                <li><a href="#">ပင်မစာမျက်နှာ</a></li>
+                <li><a href="#">အကြောင်းအရာ</a></li>
+                <li><a href="#">ဝန်ဆောင်မှုများ</a></li>
+                <li><a href="#">ဆက်သွယ်ရန်</a></li>
+            </ul>
+        </nav>
+        
+        <div class="content">
+            <div class="card">
+                <h2>GitHub Pages အကြောင်း</h2>
+                <p>GitHub Pages သည် GitHub မှပေးသော အခမဲ့ဝန်ဆောင်မှုတစ်ခုဖြစ်ပြီး ကိုယ်ပိုင် website များကို တည်ဆောက်နိုင်ရန် အထောက်အကူပြုပါသည်။</p>
+                <a href="https://pages.github.com/" class="btn">အသေးစိတ်ဖတ်ရန်</a>
+            </div>
+            
+            <div class="card">
+                <h2>အကျိုးကျေးဇူးများ</h2>
+                <p>GitHub Pages ကိုအသုံးပြုခြင်း၏ အကျိုးကျေးဇူးများစွာရှိပါသည်။ အခမဲ့ဖြစ်ခြင်း၊ လွယ်ကူစွာတည်ဆောက်နိုင်ခြင်း၊ SSL Certificate အပါအဝင်ဖြစ်ပါသည်။</p>
+                <a href="#" class="btn">ဆက်လက်လေ့လာရန်</a>
+            </div>
+            
+            <div class="card">
+                <h2>စတင်အသုံးပြုနည်း</h2>
+                <p>GitHub Pages ကိုစတင်အသုံးပြုရန် GitHub account တစ်ခုဖန်တီးပြီး repository အသစ်တစ်ခုကိုဖန်တီးရန်လိုအပ်ပါသည်။</p>
+                <a href="#" class="btn">စတင်ရန်</a>
+            </div>
+        </div>
+        
+        <footer>
+            <p>ဤဝက်ဘ်ဆိုက်ကို GitHub Pages ဖြင့်တည်ဆောက်ထားပါသည်</p>
+            <p>© 2023 မြန်မာဝက်ဘ်ဆိုက်။ မူပိုင်ခွင့်အားလုံးလုံခြုံစွာထားရှိသည်။</p>
+        </footer>
+    </div>
+
+    <script>
+        // Simple JavaScript for interactive elements
+        document.addEventListener('DOMContentLoaded', function() {
+            const cards = document.querySelectorAll('.card');
+            
+            cards.forEach(card => {
+                card.addEventListener('mouseenter', function() {
+                    this.style.boxShadow = '0 8px 12px rgba(0, 0, 0, 0.2)';
+                });
+                
+                card.addEventListener('mouseleave', function() {
+                    this.style.boxShadow = '0 4px 6px rgba(0, 0, 0, 0.1)';
+                });
+            });
+            
+            // Add current year to footer
+            const yearElement = document.createElement('span');
+            yearElement.textContent = new Date().getFullYear();
+            document.querySelector('footer p:last-child').innerHTML = 
+                document.querySelector('footer p:last-child').innerHTML.replace('2023', yearElement.textContent);
+        });
+    </script>
+</body>
+</html>
